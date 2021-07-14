@@ -1,0 +1,59 @@
+h1{color: brown;}
+
+footer{color: brown;}
+
+
+
+
+#grilla {
+    display: grid;
+    grid-template-areas:
+      "gonzalito header header"
+      "gonzalito productos publicidad"
+      "gonzalito servicios publicidad"
+      "gonzalito comunidad publicidad"
+      "gonzalito footer footer";
+    grid-template-rows: 100px 1fr 1fr 1fr 75px;
+    grid-template-columns: 20% auto 15%;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    height: 100vh;
+    margin: 0; 
+    width: 10px;
+  }
+  .border {
+    border: 1px solid rgb(118, 9, 9);
+  }
+  header {
+    grid-area: header;
+  }
+  footer {
+    grid-area: footer;
+  }
+  section#productos {
+    grid-area: productos;
+  }
+  section#servicios {
+    grid-area: servicios;
+  }
+  section#comunidad {
+    grid-area: comunidad;
+  }
+  nav {
+    grid-area: gonzalito;
+  }
+  aside {
+    grid-area: publicidad;
+  }
+  .grid {
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+  }
+  .imagenes {
+    width: 150px;
+    display: block;
+  }
+  .imagenesP {
+    width: 200px;
+    display: block;
+  }
